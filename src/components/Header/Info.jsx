@@ -25,7 +25,7 @@ const Info = () => {
 
                                 <div className='video'>
                                     <div>
-                                        <ReactPlayer url="https://youtu.be/7ZB3rz1LdFM" playing={true} width={700} height={500} title='video' allow='autoplay; encrypted-media' />
+                                        <ReactPlayer url="https://youtu.be/7ZB3rz1LdFM" playing={true} width={700} height={500} title='video' allow='autoplay; encrypted-media' muted={true} />
 
 
                                     </div>

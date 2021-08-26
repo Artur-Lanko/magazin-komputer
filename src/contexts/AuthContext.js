@@ -38,7 +38,8 @@ const AuthContextProvider = ({ children }) => {
   async function loginUser(e, history) {
     e.preventDefault();
     const loginUser = {
-      email: e.target[2].value
+      email: e.target[2].value,
+      password: e.target[2].value
     }
     try {
       const res = await axios.post(`${AUTH_API}/login`, loginUser)

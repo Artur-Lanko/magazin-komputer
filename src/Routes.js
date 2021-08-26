@@ -16,8 +16,8 @@ import Chosen from '../src/components/Chosen/Chosen'
 
 const Routes = () => {
   return (
-    <ChosenContextProvider>
-      <AuthContextProvider>
+    <AuthContextProvider>
+      <ChosenContextProvider>
         <ClientContextProvider>
           <AdminContextProvider>
             <BrowserRouter>
@@ -35,9 +35,8 @@ const Routes = () => {
             </BrowserRouter>
           </AdminContextProvider>
         </ClientContextProvider>
-      </AuthContextProvider>
-
-    </ChosenContextProvider>
+      </ChosenContextProvider>
+    </AuthContextProvider>
   );
 };
 
